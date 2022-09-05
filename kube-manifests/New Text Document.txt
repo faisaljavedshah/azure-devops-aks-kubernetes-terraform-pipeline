@@ -1,0 +1,32 @@
+…or create a new repository on the command line
+
+echo "# azure-devops-aks-kubernetes-terraform-pipeline" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/faisaljavedshah/azure-devops-aks-kubernetes-terraform-pipeline.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/faisaljavedshah/azure-devops-aks-kubernetes-terraform-pipeline.git
+git branch -M main
+git push -u origin main
+
+git push --set-upstream origin main 
+
+
+# Add Files & Commit to Local Repo
+git add .
+git commit -am "First Commit"
+
+
+ssh-keygen \
+    -m PEM \
+    -t rsa \
+    -b 4096 \
+    -C "azureuser@myserver" \
+    -f ssh-keys-teerraform-aks-devops/aks-terraform-devops-ssh-key-ububtu \
+
+mkdir ssh-keys-teerraform-aks-devops
